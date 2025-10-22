@@ -1,0 +1,58 @@
+// import { Metadata } from 'next'
+import './globals.css'
+// import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import { Raleway, Inter, Roboto } from 'next/font/google'; // Import Roboto here
+import SmoothScrollProvider from '@/components/SmoothScrollProvider'
+import { Poppins } from 'next/font/google';
+
+import CustomScrollbar from '@/components/CustomScrollbar'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',
+});
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  variable: '--font-raleway',
+  weight: ['400', '500', '600', '700'],
+});
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700'],
+});
+
+// Define Roboto font configuration
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], // Add the weights you need
+  variable: '--font-roboto',
+});
+
+// export const metadata {
+//   title: "GetExposure - Transform Your Ad Spend Into Real Customers",
+//   description:
+//     "Stop wasting money on ads that don't convert. Our data-driven approach optimizes your campaigns for maximum ROI, turning every dollar spent into measurable growth.",
+
+// }
+
+export default function RootLayout({ children }) {
+  return (
+    <html 
+      lang="en" 
+      className={`${raleway.variable} ${poppins.variable} ${inter.variable} ${roboto.variable}`} // Add roboto.variable here
+    >
+      <body>
+        {/* <Navbar /> */}
+        <SmoothScrollProvider>
+          {children}
+        </SmoothScrollProvider>
+        <CustomScrollbar />
+        <Footer />
+      </body>
+    </html>
+  )
+}
