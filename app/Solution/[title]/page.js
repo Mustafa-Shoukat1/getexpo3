@@ -6,7 +6,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 // import PricingSection from "@/components/pricing-section"
-import StatsSection from '@/components/stats-section'
+// import StatsSection from '@/components/stats-section'
 import EnhancedContactForm from "@/components/Contact"
 // import ServicesSection from "@/components/services-section"
 gsap.registerPlugin(ScrollTrigger);
@@ -422,7 +422,7 @@ const page = () => {
                 </div>
             </div>
             <div>
-                <StatsSection />
+                {/* <StatsSection /> */}
             </div>
             <Casestudies />
 
