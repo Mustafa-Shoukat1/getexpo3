@@ -97,7 +97,7 @@ export default function CaseStudies() {
             </span>
           </h2>
           <p className="text-sm md:text-2xl font-poppins font-extralight text-blue-50 max-w-5xl mt-32 mx-auto leading-relaxed">
-            Dive into the detailed journeys of businesses we've helped scale from mediocre results to consistent
+            Dive into the detailed journeys of businesses we&apos;ve helped scale from mediocre results to consistent
             profitability. Each case study reveals exactly how we identified critical scaling barriers, implemented
             strategic solutions, and delivered measurable ROI.
           </p>

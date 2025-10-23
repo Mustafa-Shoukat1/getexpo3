@@ -192,7 +192,7 @@ const Page = () => {
         }
 
 
-    }, [params])
+    }, [title2])
 
     const mobileSettings = {
         end: '+=1500',
@@ -332,7 +332,7 @@ const Page = () => {
                     <div className='Titlecont min-h-[50vh]   flex item-center justify-evenly  flex-col px-4 md:px-0'>
                         <h1 className='Title text-xl xl:text-8xl font-poppins lg:text-5xl  text-center  '>{title}</h1>
 
-                        <p className='text-center leading-normal w-full md:w-[65%] xl:text-2xl lg:text-xl text-gray-300 mx-auto'>Hey, nice to meet you. Since you're already spending on ads but not seeing optimal results, here's what your journey might look like once we start working together.</p>
+                        <p className='text-center leading-normal w-full md:w-[65%] xl:text-2xl lg:text-xl text-gray-300 mx-auto'>Hey, nice to meet you. Since you&apos;re already spending on ads but not seeing optimal results, here&apos;s what your journey might look like once we start working together.</p>
                     </div>
                     <div className="Videocont w-full flex my-20 items-center justify-center px-4 md:px-0">
 
