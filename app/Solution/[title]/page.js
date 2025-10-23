@@ -123,7 +123,7 @@ need before we switch platforms and then start working on those.`
     ]
 };
 
-const page = () => {
+const Page = () => {
     const [data, setData] = useState([])
     const [action, setAction] = useState('')
     const [progress, setProgress] = useState(0);
@@ -436,5 +436,5 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
 

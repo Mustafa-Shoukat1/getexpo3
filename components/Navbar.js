@@ -3,6 +3,7 @@
 import {  MoveRight } from "lucide-react"
 
 import Link from "next/link"
+import Image from 'next/image'
 
 export default function Navbar({ action , target="_blank"}) {
 
@@ -21,7 +22,7 @@ export default function Navbar({ action , target="_blank"}) {
         <div className="xl:container lg:px-10 xl:px-0 w-full mx-auto px-2 ">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className=" cursor-pointer">
-              <img src="/logo.png" alt="" className="w-[100px] md:w-[150px]   object-cover" />
+              <Image src="/logo.png" alt="GetExposure logo" width={150} height={40} className="w-[100px] md:w-[150px] object-cover" />
             </Link>
             <a href={action} target={target} className="flex group  transition-all duration-300 ease-in-out border-gray-200    justify-between gap-4  px-4 md:px-6 py-2  md:py-3  text-sm border ">
               <span className="">Get Started</span>

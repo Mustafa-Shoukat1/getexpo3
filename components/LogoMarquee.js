@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Marquee from 'react-fast-marquee';
+import Image from 'next/image';
 
 const LogoMarquee = ({ logos = [], speed = 50, direction = 'left', pauseOnHover = false }) => {
   // Create just one duplicate set for seamless loop
@@ -16,11 +17,12 @@ const LogoMarquee = ({ logos = [], speed = 50, direction = 'left', pauseOnHover 
     >
       {duplicatedLogos.map((logo, index) => (
         <div key={index} className="flex items-center  mx-10 xl:mx-[4vw]">
-          <img
+          <Image
             src={logo}
             alt={`logo-${index}`}
+            width={80}
+            height={40}
             className=" w-[60px] xl:w-[5vw] object-cover object-center"
-            loading="lazy" // Add lazy loading for better performance
           />
         </div>
       ))}

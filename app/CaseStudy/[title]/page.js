@@ -10,7 +10,7 @@ import Case4 from './components/Case4';
 import Case5 from './components/Case5';
 
 
-const page = () => {
+const Page = () => {
     const params = useParams();
     const title = params.title
     if (title == 'case1') {
@@ -61,4 +61,4 @@ const page = () => {
     }
 }
 
-export default page
+export default Page

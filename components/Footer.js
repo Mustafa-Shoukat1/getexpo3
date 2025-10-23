@@ -29,11 +29,11 @@ const Footer = () => {
                         <div>
                             <h4 className="text-white font-medium font-raleway text-[2vw] mb-13 border-b inline-block">Case Studies</h4>
                             <ul className="items-start flex flex-col gap-[1.4vw] text-[1vw] text-white/80">
-                                <a href="/CaseStudy/case1" className='uppercase'>Case Study 1</a>
-                                <a href="/CaseStudy/case2" className='uppercase' >Case Study 2</a>
-                                <a href="/CaseStudy/case3" className='uppercase' >Case Study 3</a>
-                                <a href="/CaseStudy/case4" className='uppercase' >Case Study 4</a>
-                                <a href="/CaseStudy/case5" className='uppercase' >Case Study 5</a>
+                                <li><Link href="/CaseStudy/case1" className='uppercase'>Case Study 1</Link></li>
+                                <li><Link href="/CaseStudy/case2" className='uppercase'>Case Study 2</Link></li>
+                                <li><Link href="/CaseStudy/case3" className='uppercase'>Case Study 3</Link></li>
+                                <li><Link href="/CaseStudy/case4" className='uppercase'>Case Study 4</Link></li>
+                                <li><Link href="/CaseStudy/case5" className='uppercase'>Case Study 5</Link></li>
                             </ul>
                         </div>
                         <div>

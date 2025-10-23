@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { ArrowUpRight, } from "lucide-react"
+import Link from 'next/link';
 
 import Marquee from 'react-fast-marquee';
 
@@ -128,11 +129,11 @@ export default function CaseStudies() {
                    */}
 
                   <motion.div  className=" group/button relative w-[215px] font-poppins cursor-pointer  hover:text-blue-400 text-pink-400  overflow-hidden h-[50px]    ">
-                    <a href={study.href} className="group-hover:translate-x-[-210px] flex gap-3 transition-all duration-500 ease-in-out">
+                    <Link href={study.href} className="group-hover:translate-x-[-210px] flex gap-3 transition-all duration-500 ease-in-out">
                       <motion.span className=" items-center gap-1 text-3xl border-b group-hover/button:border-blue-500 border-pink-400    inline-flex"><ArrowUpRight size={32} /> Learn&nbsp;More </motion.span>
                       <motion.span className=" items-center gap-1 text-3xl border-b group-hover/button:border-blue-500 border-pink-400  inline-flex">Learn&nbsp;More <ArrowUpRight size={32} /></motion.span>
 
-                    </a>
+                    </Link>
 
                   </motion.div>
                 </div>
