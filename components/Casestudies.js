@@ -1,7 +1,5 @@
 "use client"
 import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { ArrowUpRight, } from "lucide-react"
 
 import Marquee from 'react-fast-marquee';
