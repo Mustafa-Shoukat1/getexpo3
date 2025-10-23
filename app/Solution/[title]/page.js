@@ -4,7 +4,6 @@ import { useRouter, useParams } from 'next/navigation'
 import { motion } from 'framer-motion'
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import SplitType from "split-type";
 import { useGSAP } from '@gsap/react';
 // import PricingSection from "@/components/pricing-section"
 import StatsSection from '@/components/stats-section'
