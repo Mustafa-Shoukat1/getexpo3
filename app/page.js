@@ -73,7 +73,7 @@ export default function HomePage() {
                 {/* Sub-headline with improved spacing */}
                 <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-[2.6vw] font-poppins text-center text-white/95 font-normal leading-relaxed px-2">And Bring The Growth You Deserve</h2>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[1.4vw] font-normal tracking-wide leading-relaxed text-center w-[95%] md:w-[85%] lg:w-[65%] mx-auto text-white/75 font-roboto px-2">
-                  We'll pinpoint where you are in your advertising journey <br className='hidden md:block ' /> and deliver customized solutions that maximize your ROI
+                  We&apos;ll pinpoint where you are in your advertising journey <br className='hidden md:block ' /> and deliver customized solutions that maximize your ROI
                 </p>
 
                 <div className="w-full flex item-center justify-center pt-4 pb-8 md:pb-12 px-4">
