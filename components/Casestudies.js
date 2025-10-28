@@ -13,7 +13,6 @@ const caseStudies = [
     description:
       "Our client specializes in EKG interpretation training for nurse practitioners where accuracy can mean life or death. When ad fatigue hit and CPL skyrocketed, we pivoted to target problem-aware audiences with entirely new messaging frameworks.",
     results: ["Reduced CPL by 65%", "Increased conversion rate by 180%", "Scaled to $50k/month"],
-    color: "from-red-500 to-rose-600",
   },
   {
     category: "Healthcare Business",
@@ -23,7 +22,6 @@ const caseStudies = [
     description:
       "Our client helps healthcare professionals transition to owning medspas. When they shifted from live to evergreen webinars, we systematically mapped pain points across awareness levels to maintain conversion rates without the urgency of live events.",
     results: ["Maintained 4.2% conversion rate", "Reduced cost per lead by 40%", "Automated lead generation"],
-    color: "from-blue-500 to-cyan-600",
   },
   {
     category: "Healthcare Services",
@@ -33,7 +31,6 @@ const caseStudies = [
     description:
       "Our client teaches healthcare professionals about IV therapies. We repositioned the entire offering from clinical procedure training to business opportunity development, creating differentiation in a crowded healthcare education market.",
     results: ["Increased ROAS by 220%", "Expanded to 3 new markets", "Built $2M+ pipeline"],
-    color: "from-green-500 to-emerald-600",
   },
   {
     category: "Health & Wellness",
@@ -43,7 +40,6 @@ const caseStudies = [
     description:
       "Our client needed a systematic approach to launch multiple supplement products simultaneously. We developed a comprehensive ad testing framework across all awareness levels, prioritizing bioavailability as the primary USP.",
     results: ["Launched 5 products successfully", "Achieved 3.8x ROAS average", "Built loyal customer base"],
-    color: "from-purple-500 to-violet-600",
   },
   {
     category: "Business Networking",
@@ -53,7 +49,6 @@ const caseStudies = [
     description:
       "Our client runs an exclusive CEO network in Vancouver but struggled to attract qualified leads. We implemented broad targeting with qualifying copy that outperformed conventional interest targeting, attracting higher-caliber executives.",
     results: ["Increased lead quality by 300%", "Reduced cost per qualified lead by 55%", "Filled mastermind program"],
-    color: "from-orange-500 to-amber-600",
   },
   {
     category: "Skincare",
@@ -63,125 +58,114 @@ const caseStudies = [
     description:
       "Our client needed to differentiate in a crowded skincare market. We developed a comprehensive content strategy that positioned them as experts in acne treatment, resulting in significant improvements in conversion and customer acquisition.",
     results: ["40% increase in conversion rate", "25% lower customer acquisition costs", "Built brand authority"],
-    color: "from-pink-500 to-rose-600",
   },
 
 ]
 
 export default function CaseStudies() {
   return (
-    <section id="case-studies" className="py-20  my-10 relative px-4 sm:px-6 lg:px-8 ">
-      <div
-        className="absolute inset-0 rounded-2xl"
-        style={{
-          background: `
-            radial-gradient( circle at 35% 2%, rgba(99, 102, 241, 0.4) 0%, transparent 20%), 
-            radial-gradient(circle at center, rgba(0, 0, 0, 0.5) 0%, transparent 70%) 
-          `,
-          // Ensure the background covers the entire div
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
-        <div className="absolute top-0 left-0 w-full h-[100px]  bg-gradient-to-b from-black via-black/50   "></div>
+    <section id="case-studies" className="py-16 sm:py-24 md:py-32 lg:py-40 relative px-4 sm:px-6 lg:px-8">
+      {/* Simplified background - minimal gradients */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full h-[150px] bg-gradient-to-b from-black via-black/80 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-black via-black/80 to-transparent"></div>
       </div>
-      <div className="container mx-auto">
-        <div
 
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-8xl font-poppins font-medium text-white mb-2 lg:mb-6">
-            Real World{" "}
-            <span className=" text-blue-300">
+      <div className="container mx-auto relative z-10">
+        {/* Enhanced Header Section */}
+        <div className="text-center mb-16 sm:mb-20 md:mb-24 lg:mb-32 space-y-4 sm:space-y-6 md:space-y-8 px-2">
+          <h2 className="text-4xl sm:text-5xl md:text-[5rem] lg:text-[7rem] xl:text-[9vw] font-poppins font-bold text-white tracking-tight leading-none">
+            Real World
+            <br />
+            <span className="text-gray-400 font-normal">
               Success Stories
             </span>
           </h2>
-          <p className="text-sm md:text-2xl font-poppins font-extralight text-blue-50 max-w-5xl mt-32 mx-auto leading-relaxed">
-            Dive into the detailed journeys of businesses we&apos;ve helped scale from mediocre results to consistent
-            profitability. Each case study reveals exactly how we identified critical scaling barriers, implemented
-            strategic solutions, and delivered measurable ROI.
+          <p className="text-sm sm:text-base md:text-lg lg:text-2xl xl:text-[1.6vw] font-normal text-gray-400 max-w-3xl mx-auto leading-relaxed font-roboto">
+            Proven strategies that delivered measurable results for businesses like yours.
           </p>
         </div>
 
-        <div className="relative ">
-          <div className="absolute left-0 !z-[100]  top-0 h-full w-[2%] md:w-[10%] bg-gradient-to-r from-black via-black/50 to-transparent pointer-events-none "></div>
+        {/* Marquee Container */}
+        <div className="relative">
+          {/* Gradient Fades */}
+          <div className="absolute left-0 z-[100] top-0 h-full w-[10%] md:w-[15%] bg-gradient-to-r from-black via-black/80 to-transparent pointer-events-none"></div>
+          <div className="absolute right-0 z-[100] top-0 h-full w-[10%] md:w-[15%] bg-gradient-to-l from-black via-black/80 to-transparent pointer-events-none"></div>
 
-          {/* Right fade overlay */}
-          <div className="absolute right-0 !z-[100]  top-0 h-full w-[2%] md:w-[10%] bg-gradient-to-l from-black via-black/50 to-transparent pointer-events-none "></div>
-          {/* </div> */}
           <Marquee
-            speed={50}
+            speed={40}
             direction={'left'}
             pauseOnHover={true}
-            // gradient={false}
-            className=""
+            gradient={false}
           >
             {caseStudies.map((study, index) => (
               <div
                 key={index}
-                className="mx-6 lg:mx-16 relative p-2 lg:p-5 rounded-2xl group "
-
+                className="mx-8 md:mx-12 lg:mx-16"
               >
-                <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 rounded-2xl">
-                  {/* <span className="  text-blue-500 border-b border-blue-400 pb-2 font-semibold text-4xl cursor-pointer  font-raleway  transition-all duration-300">
-                    Learn More
-                  </span>
-                   */}
-
-                  <motion.div  className=" group/button relative w-[215px] font-poppins cursor-pointer  hover:text-blue-400 text-pink-400  overflow-hidden h-[50px]    ">
-                    <Link href={study.href} className="group-hover:translate-x-[-210px] flex gap-3 transition-all duration-500 ease-in-out">
-                      <motion.span className=" items-center gap-1 text-3xl border-b group-hover/button:border-blue-500 border-pink-400    inline-flex"><ArrowUpRight size={32} /> Learn&nbsp;More </motion.span>
-                      <motion.span className=" items-center gap-1 text-3xl border-b group-hover/button:border-blue-500 border-pink-400  inline-flex">Learn&nbsp;More <ArrowUpRight size={32} /></motion.span>
-
-                    </Link>
-
-                  </motion.div>
-                </div>
-
-                <div
-                  className="absolute inset-0 z-0 rounded-2xl"
-                  style={{
-                    background: `
-            radial-gradient( circle at 70% 20%, rgba(99, 102, 241, 0.4) 0%, transparent 45%), 
-            radial-gradient(circle at 20% 80%,  rgba(236, 72, 153, 0.4) 0%, transparent 45%), 
-            radial-gradient(circle at center, rgba(0, 0, 0, 0.5) 0%, transparent 70%) 
-          `,
-                    // Ensure the background covers the entire div
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat',
-                  }}
-                ></div>
-                <div className="bg-white/5 border  w-[300px] md:w-[550px] h-[460px] md:min-h-[560px] flex flex-col items-center justify-around  max-h-full rounded-2xl backdrop-blur-lg border-white/10 hover:border-white/20 transition-all duration-300 group hover:scale-105">
-                  <div className="p-6 space-y-12">
-                    {/* <Badge className={`bg-gradient-to-r ${study.color} text-white mb-4`}>{study.category}</Badge> */}
-                    <h3 className="text-xl md:text-5xl  font-poppins text-white mb-3">
-                      {study.title.includes(" ") ? (
-                        <>
-                          <span className="text-blue-400">{study.title.split(" ")[0]}</span>{" "}
-                          {study.title.split(" ").slice(1).join(" ")}
-                        </>
-                      ) : (
-                        study.title
-                      )}
-                    </h3>
-                    <p className="text-blue-50 tracking-wider  font-poppins leading-relaxed text-sm md:text-xl">{study.description}</p>
-
-                    <div className="space-y-2">
-                      <h4 className="text-sm md:text-xl font-semibold text-blue-500 uppercase tracking-wide">Key Results:</h4>
-                      {study.results.map((result, resultIndex) => (
-                        <div key={resultIndex} className="flex items-center text-xs md:text-xl font-poppins  text-blue-50">
-                          <div className="w-2 h-2 rounded-full bg-blue-500 mr-3" />
-                          {result}
+                <Link href={study.href} className="block group">
+                  {/* Card Container */}
+                  <div className="relative w-[280px] sm:w-[320px] md:w-[420px] lg:w-[500px] xl:w-[36vw] h-[480px] sm:h-[540px] md:h-[580px] lg:h-[640px] xl:h-[44vw] bg-gradient-to-b from-[#0a0a0a] to-black border border-white/[0.08] hover:border-white/20 transition-all duration-500 overflow-hidden">
+                    
+                    {/* Hover Overlay with CTA */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-500 z-20 flex items-center justify-center">
+                      <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                        <div className="flex items-center gap-2 sm:gap-3 text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium px-4">
+                          <span>View Case Study</span>
+                          <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                         </div>
-                      ))}
+                      </div>
                     </div>
+
+                    {/* Content */}
+                    <div className="relative z-10 h-full flex flex-col p-5 sm:p-6 md:p-8 lg:p-10 xl:p-[2.5vw]">
+                      
+                      {/* Category Badge */}
+                      <div className="mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+                        <span className="text-[10px] sm:text-xs md:text-sm xl:text-[0.85vw] font-medium text-gray-500 uppercase tracking-wider">
+                          {study.category}
+                        </span>
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.8vw] font-poppins font-bold text-white mb-4 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-[2vw] leading-tight tracking-tight">
+                        {study.title}
+                      </h3>
+
+                      {/* Description */}
+                      <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[1.15vw] text-gray-400 leading-relaxed font-roboto mb-auto">
+                        {study.description}
+                      </p>
+
+                      {/* Results Section */}
+                      <div className="mt-6 sm:mt-7 md:mt-8 lg:mt-10 pt-5 sm:pt-6 md:pt-6 lg:pt-8 border-t border-white/10">
+                        <h4 className="text-xs sm:text-sm md:text-base xl:text-[1vw] font-semibold text-white mb-3 sm:mb-4 md:mb-5 tracking-wide">
+                          KEY RESULTS
+                        </h4>
+                        <div className="space-y-2 sm:space-y-3 md:space-y-4">
+                          {study.results.map((result, resultIndex) => (
+                            <div key={resultIndex} className="flex items-start gap-2 sm:gap-3">
+                              <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 rounded-full bg-white mt-1.5 sm:mt-2 flex-shrink-0" />
+                              <span className="text-xs sm:text-sm md:text-base xl:text-[1vw] text-gray-300 font-roboto leading-relaxed">
+                                {result}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                    </div>
+
+                    {/* Subtle gradient accent at bottom */}
+                    <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </Marquee>
         </div>
       </div>
-    </section >
+    </section>
   )
 }

@@ -16,13 +16,13 @@ const LogoMarquee = ({ logos = [], speed = 50, direction = 'left', pauseOnHover 
       className="overflow-hidden"
     >
       {duplicatedLogos.map((logo, index) => (
-        <div key={index} className="flex items-center  mx-10 xl:mx-[4vw]">
+        <div key={index} className="flex items-center mx-12 xl:mx-[5vw]">
           <Image
             src={logo}
             alt={`logo-${index}`}
-            width={80}
-            height={40}
-            className=" w-[60px] xl:w-[5vw] object-cover object-center"
+            width={120}
+            height={60}
+            className="w-[100px] xl:w-[8vw] object-contain object-center"
           />
         </div>
       ))}

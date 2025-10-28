@@ -12,24 +12,29 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-poppins',
+  display: 'swap',
 });
 
 const raleway = Raleway({
   subsets: ['latin'],
   variable: '--font-raleway',
   weight: ['400', '500', '600', '700'],
+  display: 'swap',
 });
+
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   weight: ['400', '500', '600', '700'],
+  display: 'swap',
 });
 
 // Define Roboto font configuration
 const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['400', '500', '700'], // Add the weights you need
+  weight: ['400', '500', '700'],
   variable: '--font-roboto',
+  display: 'swap',
 });
 
 // export const metadata {
@@ -43,9 +48,10 @@ export default function RootLayout({ children }) {
   return (
     <html 
       lang="en" 
-      className={`${raleway.variable} ${poppins.variable} ${inter.variable} ${roboto.variable}`} // Add roboto.variable here
+      className={`${raleway.variable} ${poppins.variable} ${inter.variable} ${roboto.variable}`}
+      suppressHydrationWarning
     >
-      <body>
+      <body suppressHydrationWarning>
         {/* <Navbar /> */}
         <SmoothScrollProvider>
           {children}

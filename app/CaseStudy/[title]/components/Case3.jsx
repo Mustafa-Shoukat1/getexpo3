@@ -6,32 +6,21 @@ import { TrendingDown, TrendingUp, Target, Lightbulb, CheckCircle, AlertTriangle
 
 const Case3 = () => {
   return (
-    <div className="min-h-screen font-poppins mt-[100px] text-white">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="absolute inset-0 z-0 rounded-2xl"
-        style={{
-          background: `
-                  radial-gradient( circle at 20% 20%, rgba(99, 102, 241, 0.4) 0%, transparent 45%), 
-                  radial-gradient(circle at 80% 80%,  rgba(236, 72, 153, 0.4) 0%, transparent 45%), 
-                  radial-gradient(circle at center, rgba(0, 0, 0, 0.7) 0%, transparent 70%) 
-                `,
-          // Ensure the background covers the entire div
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}
-      ></motion.div>
+    <div className="min-h-screen font-poppins mt-[100px] text-white bg-black">
+      
       {/* Header */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 "></div>
-        <div className="relative container mx-auto px-6 py-16">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-4 text-white text-transparent">
-              CASE STUDY 3
+      <div className="relative overflow-hidden border-b border-white/5">
+        <div className="relative container mx-auto px-6 py-20 md:py-32">
+          <div className="max-w-5xl mx-auto space-y-8">
+            <div className="inline-block">
+              <span className="text-xs md:text-sm font-medium text-gray-500 uppercase tracking-[0.2em]">
+                Case Study
+              </span>
+            </div>
+            <h1 className="text-5xl md:text-7xl xl:text-[6rem] font-bold text-white leading-none tracking-tight">
+              IV Hydration
             </h1>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl xl:text-[1.6vw] text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
               How repositioning transformed an IV hydration training program from 1-2X ROAS to 5.3X ROAS
             </p>
           </div>
@@ -39,16 +28,18 @@ const Case3 = () => {
       </div>
 
       {/* Backstory + Situation */}
-      <section className="container mx-auto px-6 py-12">
-        <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 shadow-2xl">
-          <div className="flex items-center mb-6">
-            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
-              <Target className="w-6 h-6" />
+      <section className="container mx-auto px-6 py-16 md:py-24">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12 md:mb-16">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
+                <Target className="w-5 h-5 md:w-6 md:h-6 text-black" />
+              </div>
+              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Backstory + Situation</h2>
             </div>
-            <h2 className="text-3xl font-bold text-blue-400">Backstory + Situation</h2>
           </div>
 
-          <div className="space-y-4 text-gray-300 leading-relaxed">
+          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
             <p>
               I started running ads for this client last year. She helps healthcare professionals in various verticals transition into IV Hydration Businesses.
             </p>
@@ -64,25 +55,25 @@ const Case3 = () => {
           </div>
 
           {/* Initial Performance */}
-          <div className="mt-6 grid md:grid-cols-2 gap-4">
-            <div className="bg-red-600/10 border border-red-500/30 rounded-lg p-4">
+          <div className="mt-10 md:mt-12 grid md:grid-cols-2 gap-6">
+            <div className="p-8 md:p-10 bg-[#0a0a0a] border border-white/10">
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-red-400 font-semibold">Initial ROAS</div>
-                  <div className="text-2xl font-bold text-red-300">1-2X</div>
-                  <div className="text-sm text-gray-400">Not good enough</div>
+                  <div className="text-gray-400 font-medium mb-2">Initial ROAS</div>
+                  <div className="text-4xl md:text-5xl font-bold text-white mb-2">1-2X</div>
+                  <div className="text-sm text-gray-500">Not good enough</div>
                 </div>
-                <TrendingDown className="w-8 h-8 text-red-400" />
+                <TrendingDown className="w-12 h-12 text-gray-400" />
               </div>
             </div>
-            <div className="bg-yellow-600/10 border border-yellow-500/30 rounded-lg p-4">
+            <div className="p-8 md:p-10 bg-white/5 border border-white/10">
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-yellow-400 font-semibold">Target ROAS</div>
-                  <div className="text-2xl font-bold text-yellow-300">5-6X</div>
-                  <div className="text-sm text-gray-400">Goal to achieve</div>
+                  <div className="text-gray-400 font-medium mb-2">Target ROAS</div>
+                  <div className="text-4xl md:text-5xl font-bold text-white mb-2">5-6X</div>
+                  <div className="text-sm text-gray-500">Goal to achieve</div>
                 </div>
-                <Target className="w-8 h-8 text-yellow-400" />
+                <Target className="w-12 h-12 text-white" />
               </div>
             </div>
           </div>
@@ -90,39 +81,41 @@ const Case3 = () => {
       </section>
 
       {/* Challenge */}
-      <section className="container mx-auto px-6 py-12">
-        <div className="bg-red-900/20 backdrop-blur-sm rounded-2xl p-8 border border-red-700/50 shadow-2xl">
-          <div className="flex items-center mb-6">
-            <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mr-4">
-              <AlertTriangle className="w-6 h-6" />
+      <section className="container mx-auto px-6 py-16 md:py-24 bg-gradient-to-b from-black via-[#0a0a0a] to-black">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12 md:mb-16">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1a1a1a] border border-white/20 rounded-full flex items-center justify-center">
+                <AlertTriangle className="w-5 h-5 md:w-6 md:h-6 text-white" />
+              </div>
+              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Challenge</h2>
             </div>
-            <h2 className="text-3xl font-bold text-red-400">Challenge</h2>
           </div>
 
-          <div className="space-y-4 text-gray-300 leading-relaxed">
+          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
             <p>
               After doing a lot of research, I realized that the offer wasn't standing out. Which is why even with the proven ads, the CTR wasn't hitting the 2% mark.
             </p>
             <p>
               Rewriting ads to target different awareness levels of the market didn't work enough.
             </p>
-            <p className="font-medium text-red-300">
+            <p className="font-medium text-white">
               Positioning was the key issue here.
             </p>
           </div>
 
           {/* Challenge Indicators */}
-          <div className="mt-6 grid md:grid-cols-2 gap-4">
-            <div className="bg-red-600/10 border border-red-500/30 rounded-lg p-4">
-              <div className="flex items-center">
-                <TrendingDown className="w-5 h-5 text-red-400 mr-2" />
-                <span className="text-red-400 font-semibold">CTR below 2% mark</span>
+          <div className="mt-10 md:mt-12 grid md:grid-cols-2 gap-6">
+            <div className="p-8 bg-[#0a0a0a] border border-white/10">
+              <div className="flex items-start gap-4">
+                <TrendingDown className="w-7 h-7 text-white flex-shrink-0 mt-1" />
+                <span className="text-lg md:text-xl text-white font-medium">CTR below 2% mark</span>
               </div>
             </div>
-            <div className="bg-red-600/10 border border-red-500/30 rounded-lg p-4">
-              <div className="flex items-center">
-                <Layers className="w-5 h-5 text-red-400 mr-2" />
-                <span className="text-red-400 font-semibold">Offer not standing out</span>
+            <div className="p-8 bg-[#0a0a0a] border border-white/10">
+              <div className="flex items-start gap-4">
+                <Layers className="w-7 h-7 text-white flex-shrink-0 mt-1" />
+                <span className="text-lg md:text-xl text-white font-medium">Offer not standing out</span>
               </div>
             </div>
           </div>
@@ -130,54 +123,56 @@ const Case3 = () => {
       </section>
 
       {/* Task */}
-      <section className="container mx-auto px-6 py-12">
-        <div className="bg-yellow-900/20 backdrop-blur-sm rounded-2xl p-8 border border-yellow-700/50 shadow-2xl">
-          <div className="flex items-center mb-6">
-            <div className="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center mr-4">
-              <Lightbulb className="w-6 h-6" />
+      <section className="container mx-auto px-6 py-16 md:py-24">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12 md:mb-16">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
+                <Lightbulb className="w-5 h-5 md:w-6 md:h-6 text-black" />
+              </div>
+              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Task</h2>
             </div>
-            <h2 className="text-3xl font-bold text-yellow-400">Task</h2>
+
+            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto mb-12">
+              I had a few different ideas to position the offer.
+            </p>
           </div>
 
-          <p className="text-gray-300 mb-6 leading-relaxed">
-            I had a few different ideas to position the offer.
-          </p>
-
-          <div className="space-y-4 mb-6">
-            <div className="bg-yellow-600/10 border border-yellow-500/30 rounded-lg p-4">
-              <div className="flex items-start">
-                <div className="w-6 h-6 bg-yellow-600 rounded-full flex items-center justify-center mr-3 mt-0.5 text-xs font-bold">
+          <div className="space-y-6 mb-12">
+            <div className="p-8 bg-white/5 border border-white/10">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-lg font-bold text-black">
                   1
                 </div>
-                <span className="text-yellow-200">
+                <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">
                   For example, we could target a different set of audience and besides just Nurses, we could target a more niched audience.
                 </span>
               </div>
             </div>
-            <div className="bg-yellow-600/10 border border-yellow-500/30 rounded-lg p-4">
-              <div className="flex items-start">
-                <div className="w-6 h-6 bg-yellow-600 rounded-full flex items-center justify-center mr-3 mt-0.5 text-xs font-bold">
+            <div className="p-8 bg-white/5 border border-white/10">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-lg font-bold text-black">
                   2
                 </div>
-                <span className="text-yellow-200">
+                <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">
                   Or we could position ourselves in the business category. Meaning, instead of teaching how to transition from a full time nursing role, we could teach how to open a business hydration business.
                 </span>
               </div>
             </div>
           </div>
 
-          <p className="text-gray-300 mb-4 leading-relaxed">This lead to …</p>
+          <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto mb-8">This lead to …</p>
 
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               "Changing the entire landing page, OTO offer",
               "Client also made a few changes in the course",
               "I worked on the ads, and made them more about how to start an IVH business instead of how to become an IVH nurse."
             ].map((task, index) => (
-              <div key={index} className="bg-teal-600/10 border border-teal-500/30 rounded-lg p-4">
-                <div className="flex items-start">
-                  <RefreshCw className="w-5 h-5 text-teal-400 mr-2 mt-0.5" />
-                  <span className="text-teal-200">{task}</span>
+              <div key={index} className="p-8 bg-white/5 border border-white/10">
+                <div className="flex items-start gap-4">
+                  <RefreshCw className="w-6 h-6 text-white flex-shrink-0 mt-1" />
+                  <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">{task}</span>
                 </div>
               </div>
             ))}
@@ -186,40 +181,42 @@ const Case3 = () => {
       </section>
 
       {/* Action */}
-      <section className="container mx-auto px-6 py-12">
-        <div className="bg-purple-900/20 backdrop-blur-sm rounded-2xl p-8 border border-purple-700/50 shadow-2xl">
-          <div className="flex items-center mb-6">
-            <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
-              <Zap className="w-6 h-6" />
+      <section className="container mx-auto px-6 py-16 md:py-24 bg-gradient-to-b from-black via-[#0a0a0a] to-black">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12 md:mb-16">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
+                <Zap className="w-5 h-5 md:w-6 md:h-6 text-black" />
+              </div>
+              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Action</h2>
             </div>
-            <h2 className="text-3xl font-bold text-purple-400">Action</h2>
           </div>
 
-          <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed">
+          <div className="space-y-8 md:space-y-12">
+            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
               I saw that almost no one was using this positioning of becoming an IVH business owner in ads.
             </p>
 
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
               And that's what I changed in my ads.
             </p>
 
             {/* Strategy Breakdown */}
-            <div className="bg-purple-600/10 border border-purple-500/30 rounded-lg p-6">
-              <h3 className="text-purple-300 font-semibold text-lg mb-4">Ad Strategy Implementation</h3>
-              <div className="space-y-3 text-gray-300">
+            <div className="p-10 bg-white/5 border border-white/10">
+              <h3 className="text-2xl md:text-3xl font-semibold text-white mb-8">Ad Strategy Implementation</h3>
+              <div className="space-y-6 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
                 <p>I wrote problem aware ads, solution ware ads. Plus I wrote Product aware ads for her warm audience on IG and Tiktok.</p>
 
-                <div className="grid md:grid-cols-2 gap-4 mt-4">
-                  <div className="bg-purple-700/20 rounded-lg p-4">
-                    <h4 className="text-purple-300 font-medium mb-2">Landing Page Focus</h4>
-                    <p className="text-sm text-gray-300">
+                <div className="grid md:grid-cols-2 gap-6 mt-8">
+                  <div className="p-6 bg-[#0a0a0a] border border-white/10">
+                    <h4 className="text-white font-medium text-lg mb-3">Landing Page Focus</h4>
+                    <p className="text-sm md:text-base text-gray-400">
                       The landing page, that was rewritten, was targeting solution aware people – nurses who wanted to start an IVH business but don't know how to.
                     </p>
                   </div>
-                  <div className="bg-purple-700/20 rounded-lg p-4">
-                    <h4 className="text-purple-300 font-medium mb-2">Ad Focus</h4>
-                    <p className="text-sm text-gray-300">
+                  <div className="p-6 bg-[#0a0a0a] border border-white/10">
+                    <h4 className="text-white font-medium text-lg mb-3">Ad Focus</h4>
+                    <p className="text-sm md:text-base text-gray-400">
                       I made my ads about nurses, who realize they have a problem and want to switch their career.
                     </p>
                   </div>
@@ -227,25 +224,25 @@ const Case3 = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-purple-600/20 to-teal-600/20 border border-purple-500/30 rounded-lg p-6">
-              <h3 className="text-purple-300 font-semibold text-lg mb-4">Perfect Awareness Escalation</h3>
-              <p className="text-gray-300 mb-4">
+            <div className="p-10 bg-white/5 border border-white/10">
+              <h3 className="text-2xl md:text-3xl font-semibold text-white mb-8">Perfect Awareness Escalation</h3>
+              <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto mb-8">
                 The combination of ads and the landing page was escalating the awareness of our reader perfectly.
               </p>
 
-              <div className="flex flex-col md:flex-row gap-4">
-                <div className="flex-1 bg-purple-700/20 rounded-lg p-4">
-                  <h4 className="text-purple-300 font-medium mb-2">Ads</h4>
-                  <p className="text-sm text-gray-300">(about a new and exciting opportunity)</p>
+              <div className="flex flex-col md:flex-row gap-6 items-center">
+                <div className="flex-1 p-6 bg-[#0a0a0a] border border-white/10">
+                  <h4 className="text-white font-medium text-lg mb-2">Ads</h4>
+                  <p className="text-sm text-gray-400">(about a new and exciting opportunity)</p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-                    <span className="text-white text-sm">→</span>
+                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                    <span className="text-black text-xl font-bold">→</span>
                   </div>
                 </div>
-                <div className="flex-1 bg-teal-700/20 rounded-lg p-4">
-                  <h4 className="text-teal-300 font-medium mb-2">Landing Page</h4>
-                  <p className="text-sm text-gray-300">(Introducing a proven strategy to open IVH business in 60 days)</p>
+                <div className="flex-1 p-6 bg-[#0a0a0a] border border-white/10">
+                  <h4 className="text-white font-medium text-lg mb-2">Landing Page</h4>
+                  <p className="text-sm text-gray-400">(Introducing a proven strategy to open IVH business in 60 days)</p>
                 </div>
               </div>
             </div>
@@ -254,63 +251,63 @@ const Case3 = () => {
       </section>
 
       {/* Result */}
-      <section className="container mx-auto px-6 py-12">
-        <div className="bg-green-900/20 backdrop-blur-sm rounded-2xl p-8 border border-green-700/50 shadow-2xl">
-          <div className="flex items-center mb-6">
-            <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
-              <CheckCircle className="w-6 h-6" />
+      <section className="container mx-auto px-6 py-16 md:py-24 border-t border-white/5">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-12 md:mb-16">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-black" />
+              </div>
+              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Result</h2>
             </div>
-            <h2 className="text-3xl font-bold text-green-400">Result</h2>
+
+            <p className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+              It was an instant hit.
+            </p>
           </div>
 
-          <p className="text-2xl font-bold text-green-300 mb-6 text-center">
-            It was an instant hit.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-green-600/10 border border-green-500/30 rounded-lg p-6 text-center">
-              <div className="text-4xl font-bold text-green-400 mb-2">$1.85 - 3.99</div>
-              <div className="text-green-300 font-medium">CPL Range</div>
-              <div className="text-sm text-gray-400 mt-1">Excellent performance</div>
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
+              <div className="text-4xl md:text-5xl xl:text-[3.5vw] font-bold text-white mb-4">$1.85 - 3.99</div>
+              <div className="text-lg md:text-xl text-white font-medium mb-2">CPL Range</div>
+              <div className="text-sm text-gray-400">Excellent performance</div>
             </div>
-            <div className="bg-green-600/10 border border-green-500/30 rounded-lg p-6 text-center">
-              <div className="text-4xl font-bold text-green-400 mb-2">5.3X</div>
-              <div className="text-green-300 font-medium">Webinar ROAS</div>
-              <div className="text-sm text-gray-400 mt-1">Exceeded target</div>
+            <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
+              <div className="text-4xl md:text-5xl xl:text-[3.5vw] font-bold text-white mb-4">5.3X</div>
+              <div className="text-lg md:text-xl text-white font-medium mb-2">Webinar ROAS</div>
+              <div className="text-sm text-gray-400">Exceeded target</div>
             </div>
-            <div className="bg-green-600/10 border border-green-500/30 rounded-lg p-6 text-center">
-              <div className="text-4xl font-bold text-green-400 mb-2">$30K</div>
-              <div className="text-green-300 font-medium">Monthly Budget</div>
-              <div className="text-sm text-gray-400 mt-1">Scaled investment</div>
+            <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
+              <div className="text-4xl md:text-5xl xl:text-[3.5vw] font-bold text-white mb-4">$30K</div>
+              <div className="text-lg md:text-xl text-white font-medium mb-2">Monthly Budget</div>
+              <div className="text-sm text-gray-400">Scaled investment</div>
             </div>
           </div>
 
-          <div className="mt-6 space-y-4">
-            <div className="flex items-center space-x-2 text-green-300">
-              <DollarSign className="w-5 h-5" />
+          <div className="space-y-6">
+            <div className="flex items-center gap-4 text-white text-lg md:text-xl">
+              <DollarSign className="w-6 h-6 flex-shrink-0" />
               <span className="font-semibold">CPL: $1.85 - 3.99</span>
             </div>
-            <div className="flex items-center space-x-2 text-green-300">
-              <TrendingUp className="w-5 h-5" />
+            <div className="flex items-center gap-4 text-white text-lg md:text-xl">
+              <TrendingUp className="w-6 h-6 flex-shrink-0" />
               <span className="font-semibold">Webinar ROAS: 5.3X</span>
             </div>
-            <div className="flex items-center space-x-2 text-green-300">
-              <Target className="w-5 h-5" />
+            <div className="flex items-center gap-4 text-white text-lg md:text-xl">
+              <Target className="w-6 h-6 flex-shrink-0" />
               <span className="font-semibold">Monthly budget $30K</span>
             </div>
           </div>
 
           {/* Success Highlight */}
-          <div className="mt-6 bg-gradient-to-r from-green-600/20 to-teal-600/20 border border-green-500/30 rounded-lg p-4">
-            <div className="flex items-center">
-              <Zap className="w-6 h-6 text-green-400 mr-3" />
-              <span className="text-green-300 font-semibold">Transformation Success: From 1-2X ROAS to 5.3X ROAS through strategic repositioning</span>
+          <div className="mt-12 p-8 bg-white/5 border border-white/10">
+            <div className="flex items-start gap-4">
+              <Zap className="w-7 h-7 text-white flex-shrink-0 mt-1" />
+              <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">Transformation Success: From 1-2X ROAS to 5.3X ROAS through strategic repositioning</span>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
 
     </div>
   );

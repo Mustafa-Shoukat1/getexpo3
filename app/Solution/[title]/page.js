@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
+import SplitType from 'split-type';
 // import PricingSection from "@/components/pricing-section"
 // import StatsSection from '@/components/stats-section'
-import EnhancedContactForm from "@/components/Contact"
 // import ServicesSection from "@/components/services-section"
 gsap.registerPlugin(ScrollTrigger);
 
@@ -149,11 +149,6 @@ const Page = () => {
 
     const title = fromSlug(params.title)
     const title2 = params.title
-
-    const handleScroll = () => {
-        const element = document.getElementById("pricing");
-        element.scrollIntoView({ behavior: "smooth" });
-    };
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(max-width: 768px)');
@@ -327,39 +322,41 @@ const Page = () => {
                         backgroundRepeat: 'no-repeat',
                     }}
                 ></motion.div>
-                <div className='container relative mx-auto py-16'>
+                <div className='container relative mx-auto py-8 sm:py-12 md:py-16'>
 
-                    <div className='Titlecont min-h-[50vh]   flex item-center justify-evenly  flex-col px-4 md:px-0'>
-                        <h1 className='Title text-xl xl:text-8xl font-poppins lg:text-5xl  text-center  '>{title}</h1>
+                    <div className='Titlecont min-h-[40vh] sm:min-h-[50vh] flex item-center justify-evenly flex-col px-4 sm:px-6 md:px-8 lg:px-0'>
+                        <h1 className='Title text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl font-poppins text-center mb-4 sm:mb-6'>{title}</h1>
 
-                        <p className='text-center leading-normal w-full md:w-[65%] xl:text-2xl lg:text-xl text-gray-300 mx-auto'>Hey, nice to meet you. Since you&apos;re already spending on ads but not seeing optimal results, here&apos;s what your journey might look like once we start working together.</p>
+                        <p className='text-center leading-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl w-full md:w-[80%] lg:w-[65%] text-gray-300 mx-auto'>Hey, nice to meet you. Since you&apos;re already spending on ads but not seeing optimal results, here&apos;s what your journey might look like once we start working together.</p>
                     </div>
-                    <div className="Videocont w-full flex my-20 items-center justify-center px-4 md:px-0">
-
-                        {/* <iframe className='Video' width="761" height="428" src="https://1drv.ms/v/c/c3b46c3c90c89740/EfbC42Md-edDnojwy-bVlrIBpvZLQBx5yQPD72FZe8SBaQ?e=7uiAw8" title="Why You’re Not Seeing Results in Your Marketing" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-                        {/* <video width="761" height="428" src={video} controls></video> */}
-         <iframe
-        src={video}
-        width="640"
-        height="360"
-        allow="autoplay"
-        allowFullScreen
-      ></iframe>
+                    <div className="Videocont w-full flex my-12 sm:my-16 md:my-20 items-center justify-center px-4 md:px-0">
+                        {video && (
+                            <iframe
+                                src={video}
+                                className="w-full max-w-[640px] h-auto aspect-video"
+                                allow="autoplay"
+                                allowFullScreen
+                                title="Solution Video"
+                            ></iframe>
+                        )}
                     </div>
 
                 </div>
-                <div className="w-full flex justify-center">
-
-                    <div onClick={handleScroll} className="mx-auto">
-
-                        <a href={action} target='_blank' className="btn-primary flex group hover:scale-105 item-center justify-between gap-4  !px-8 !py-4 text-lg rounded-full !font-extralight">
-                            Get Started Today!
-                            <span className="group-hover:translate-x-2 transition-all duration-300 ease-in-out">
-
-                                <MoveRight size={18} />
-                            </span>
-                        </a>
-                    </div>
+                <div className="w-full flex justify-center px-4">
+                    <a 
+                        href={action} 
+                        target='_blank' 
+                        rel="noopener noreferrer"
+                        className="group relative inline-flex items-center justify-center gap-3 sm:gap-4 px-8 sm:px-10 md:px-12 lg:px-14 xl:px-[3vw] py-4 sm:py-5 md:py-6 xl:py-[1.5vw] bg-white hover:bg-black text-black hover:text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl xl:text-[1.3vw] transition-all duration-500 ease-out overflow-hidden border-2 border-white hover:border-white shadow-xl hover:shadow-2xl transform hover:scale-105 cursor-pointer"
+                    >
+                        {/* Animated background effect */}
+                        <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></span>
+                        
+                        <span className="relative z-10 tracking-wide">Get Started Today</span>
+                        <span className="relative z-10 transition-all duration-300 group-hover:translate-x-2">
+                            <MoveRight className='w-5 h-5 sm:w-6 sm:h-6 xl:w-[1.6vw] xl:h-[1.6vw]' />
+                        </span>
+                    </a>
                 </div>
             </div>
 
@@ -388,7 +385,7 @@ const Page = () => {
 
                     {data.map((text, index) => (
                         <React.Fragment key={index}>
-                            <div className="fixed top-1/2 -translate-y-1/2 right-1 md:right-10 rounded-full h-[40vh] w-1 bg-black z-50">
+                            <div className="fixed top-1/2 -translate-y-1/2 right-2 sm:right-4 md:right-10 rounded-full h-[30vh] sm:h-[35vh] md:h-[40vh] w-0.5 sm:w-1 bg-black z-50">
                                 <div
                                     ref={progressRef}
                                     className="bg-[rgb(236,72,153)] w-full rounded-full"
@@ -396,7 +393,7 @@ const Page = () => {
                                 />
                             </div>
                             <div
-                                className={`top-10 text-xl lg:text-6xl fixed left-10 text-white transition-opacity duration-500 ${activeIndex === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                                className={`top-6 sm:top-8 md:top-10 text-base sm:text-lg md:text-xl lg:text-4xl xl:text-6xl fixed left-4 sm:left-6 md:left-10 text-white transition-opacity duration-500 ${activeIndex === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
                                     }`}
                             >
                                 {String(index + 1).padStart(2, '0')}
@@ -404,7 +401,7 @@ const Page = () => {
 
                             <div
                                 ref={el => (textRefs2.current[index] = el)}
-                                className={`fixed top-1/4 left-1/2 -translate-x-1/2  text-center text-2xl w-full xl:text-7xl lg:text-5xl   text-white md:w-[70%] leading-tight transition-opacity ${activeIndex === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                                className={`fixed top-1/4 left-1/2 -translate-x-1/2 text-center text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-7xl w-[90%] sm:w-[85%] md:w-[75%] lg:w-[70%] text-white leading-tight transition-opacity px-4 ${activeIndex === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
                                     }`}
                             >
                                 {text.title}
@@ -412,7 +409,7 @@ const Page = () => {
 
                             <div
                                 ref={el => (textRefs.current[index] = el)}
-                                className={`absolute font-poppins tracking-widest md:leading-relaxed !font-extralight top-1/2 left-1/2 container px-2 md:px-0  -translate-x-1/2 text-center text-sm lg:text-xl  text-gray-200 md:w-[100%]  transition-opacity ${activeIndex === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                                className={`absolute font-poppins tracking-wide md:tracking-widest leading-relaxed md:leading-relaxed !font-extralight top-1/2 left-1/2 container px-4 sm:px-6 md:px-8 lg:px-0  -translate-x-1/2 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl  text-gray-200 md:w-[100%]  transition-opacity ${activeIndex === index ? 'opacity-100' : 'opacity-0 pointer-events-none'
                                     }`}
                                 dangerouslySetInnerHTML={{ __html: text.description }}
                             ></div>
@@ -427,7 +424,6 @@ const Page = () => {
             <Casestudies />
 
 
-            <EnhancedContactForm />
 
 
 

@@ -16,35 +16,35 @@ const Page = () => {
     if (title == 'case1') {
         return (
             <>
-                <Navbar action='https://calendly.com/rohittangri/looking-to-scale-clone' />
+                <Navbar action='https://calendly.com/rohittangri/looking-to-scale' />
                 <Case1 />
             </>
         )
     } else if (title == 'case2') {
         return (
             <>
-                <Navbar action='https://calendly.com/rohittangri/looking-to-scale-clone' />
+                <Navbar action='https://calendly.com/rohittangri/looking-to-scale' />
                 <Case2 />
             </>
         )
     } else if (title == 'case3') {
         return (
             <>
-                <Navbar action='https://calendly.com/rohittangri/looking-to-scale-clone' />
+                <Navbar action='https://calendly.com/rohittangri/looking-to-scale' />
                 <Case3 />
             </>
         )
     } else if (title == 'case4') {
         return (
             <>
-                <Navbar action='https://calendly.com/rohittangri/looking-to-scale-clone' />
+                <Navbar action='https://calendly.com/rohittangri/looking-to-scale' />
                 <Case4 />
             </>
         )
     } else if (title == 'case5') {
         return (
             <>
-                <Navbar action='https://calendly.com/rohittangri/looking-to-scale-clone' />
+                <Navbar action='https://calendly.com/rohittangri/looking-to-scale' />
                 <Case5 />
             </>
         )
@@ -53,8 +53,8 @@ const Page = () => {
     else {
 
         return (
-            <div className='font-poppins text-3xl text-white flex items-center justify-center w-full min-h-screen'>
-                <Navbar action='https://calendly.com/rohittangri/looking-to-scale-clone' />
+            <div className='font-poppins text-3xl text-white flex items-center justify-center w-full min-h-screen bg-black'>
+                <Navbar action='https://calendly.com/rohittangri/looking-to-scale' />
                 Not Found
             </div>
         )
