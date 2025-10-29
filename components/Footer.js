@@ -47,17 +47,30 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className="border-t text-xs sm:text-sm md:text-base lg:text-lg xl:text-[1.3vw] mt-6 sm:mt-8 lg:mt-[3vw] font-poppins tracking-wider flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-around border-white/10 pt-6 sm:pt-8 text-center text-white/90 gap-4">
-                    <span>© 2025 GetExposure. All rights reserved.</span>
-                    <span className='flex flex-wrap justify-center text-xs sm:text-sm md:text-base lg:text-[1.1vw] items-end gap-2'>
-                        <span> Designed by </span>
-                        <span className='font-medium italic pb-[0.5px] border-b-[0.5px] border-white/70 text-white font-poppins text-sm sm:text-base md:text-lg lg:text-xl xl:text-[1.4vw]'>
-                            <a target='_blank' href="https://www.linkedin.com/in/maryam-fatima-rajput/" className="hover:text-white/80 transition-colors">
-                                Maryam Fatima
+                
+                {/* Copyright and Credits Section */}
+                <div className="border-t border-white/10 mt-6 sm:mt-8 lg:mt-[3vw] pt-6 sm:pt-8">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-white/80 text-xs sm:text-sm md:text-base lg:text-[1vw]">
+                        
+                        {/* Copyright */}
+                        <div className="font-poppins">
+                            © {new Date().getFullYear()} GetExposure. All rights reserved.
+                        </div>
+                        
+                        {/* Designed By */}
+                        <div className="flex items-center gap-2 font-poppins">
+                            <span>Designed & Developed by</span>
+                            <a 
+                                href="https://codagentic.software/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="font-medium text-white hover:text-white/60 transition-colors duration-300 border-b border-white/50 hover:border-white/30"
+                            >
+                                CodAgentic
                             </a>
-                        </span>
-
-                    </span>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </footer>
