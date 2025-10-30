@@ -659,16 +659,6 @@ const RealisticCustomerMachine = () => {
                 <div className="absolute left-0  z-[100] top-0 h-full w-[15%] bg-gradient-to-r from-black via-black/50 to-transparent pointer-events-none "></div>
                 <div className="absolute right-0 z-[100] top-0 h-full w-[15%] bg-gradient-to-l from-black via-black/50 to-transparent pointer-events-none "></div>
 
-                <div className=''>
-
-                    <div className='flex font-raleway uppercase text-gray-100 items-center justify-around'>
-
-                        <h1 className='text-lg md:text-5xl font-medium '>AdSpend</h1>
-                        
-                        <h2 className='text-lg md:text-5xl font-medium'>Customers</h2>
-                    </div>
-                </div>
-
             </div>
             <canvas
                 className="w-full h-full focus:outline-none bg-transparent"

@@ -17,10 +17,10 @@ const Case5 = () => {
                                 Case Study
                             </span>
                         </div>
-                        <h1 className="text-5xl md:text-7xl xl:text-[6rem] font-bold text-white leading-none tracking-tight">
+                        <h1 className="text-5xl md:text-7xl xl:text-6xl font-bold text-white leading-none tracking-tight">
                             Internet Mastermind
                         </h1>
-                        <p className="text-xl md:text-2xl xl:text-[1.6vw] text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
+                        <p className="text-xl md:text-2xl xl:text-2xl text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
                             How broad targeting strategy reduced CPL by 60% while attracting high-caliber CEOs to an exclusive Vancouver mastermind
                         </p>
                     </div>
@@ -35,11 +35,11 @@ const Case5 = () => {
                             <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                                 <Crown className="w-5 h-5 md:w-6 md:h-6 text-black" />
                             </div>
-                            <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Backstory + Situation</h2>
+                            <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Backstory + Situation</h2>
                         </div>
                     </div>
 
-                    <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+                    <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
                         <p>
                             Internet Mastermind is one of the fastest-growing masterminds in Vancouver, known for its exclusive network of CEOs, executives, and high-level entrepreneurs. The mastermind's CEO had crafted a unique onboarding process:
                         </p>
@@ -67,7 +67,7 @@ const Case5 = () => {
                         </div>
                     </div>
 
-                    <div className="mt-10 md:mt-12 space-y-6 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+                    <div className="mt-10 md:mt-12 space-y-6 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
                         <p>
                             However, the campaign wasn't delivering the desired results. The CEO wasn't getting qualified leads—the majority of prospects were far from the target demographic of high-earning CEOs and executives.
                         </p>
@@ -80,7 +80,7 @@ const Case5 = () => {
                     <div className="mt-10 md:mt-12 p-8 bg-[#0a0a0a] border border-white/10">
                         <div className="flex items-start gap-4">
                             <AlertTriangle className="w-7 h-7 text-white flex-shrink-0 mt-1" />
-                            <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">Poor Lead Quality: Attracting unqualified prospects instead of high-earning CEOs and executives</span>
+                            <span className="text-lg md:text-xl xl:text-lg text-white font-medium leading-relaxed">Poor Lead Quality: Attracting unqualified prospects instead of high-earning CEOs and executives</span>
                         </div>
                     </div>
                 </div>
@@ -94,11 +94,11 @@ const Case5 = () => {
                             <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1a1a1a] border border-white/20 rounded-full flex items-center justify-center">
                                 <AlertTriangle className="w-5 h-5 md:w-6 md:h-6 text-white" />
                             </div>
-                            <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Challenge</h2>
+                            <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Challenge</h2>
                         </div>
                     </div>
 
-                    <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto mb-12">
+                    <p className="text-base md:text-xl xl:text-lg text-gray-400 leading-relaxed font-roboto mb-12">
                         The CEO faced two critical challenges:
                     </p>
 
@@ -140,10 +140,10 @@ const Case5 = () => {
                             <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                                 <Target className="w-5 h-5 md:w-6 md:h-6 text-black" />
                             </div>
-                            <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Task</h2>
+                            <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Task</h2>
                         </div>
 
-                        <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto">
+                        <p className="text-base md:text-xl xl:text-lg text-gray-400 leading-relaxed font-roboto">
                             I was brought in to:
                         </p>
                     </div>
@@ -160,7 +160,7 @@ const Case5 = () => {
                                     </div>
                                     <Filter className="w-7 h-7 text-white" />
                                 </div>
-                                <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">{item.task}</span>
+                                <span className="text-base md:text-lg xl:text-lg text-gray-200 leading-relaxed font-roboto">{item.task}</span>
                             </div>
                         ))}
                     </div>
@@ -175,7 +175,7 @@ const Case5 = () => {
                             <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                                 <Lightbulb className="w-5 h-5 md:w-6 md:h-6 text-black" />
                             </div>
-                            <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Action</h2>
+                            <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Action</h2>
                         </div>
                     </div>
 
@@ -189,7 +189,7 @@ const Case5 = () => {
                                 <h3 className="text-2xl md:text-3xl font-semibold text-white">Testing Targeting Strategies</h3>
                             </div>
 
-                            <div className="space-y-6 text-base md:text-lg xl:text-[1.1vw] text-gray-300 leading-relaxed font-roboto">
+                            <div className="space-y-6 text-base md:text-lg xl:text-lg text-gray-300 leading-relaxed font-roboto">
                                 <p>Initially, the CEO wanted to use interest-based targeting to narrow down audiences.</p>
                                 <p>However, I recommended a broad targeting approach, allowing the ad copy to qualify the audience instead of relying on Facebook's interest feature.</p>
 
@@ -236,7 +236,7 @@ const Case5 = () => {
                                 <h3 className="text-2xl md:text-3xl font-semibold text-white">Crafting Persuasive Ad Copy</h3>
                             </div>
 
-                            <div className="space-y-6 text-base md:text-lg xl:text-[1.1vw] text-gray-300 leading-relaxed font-roboto">
+                            <div className="space-y-6 text-base md:text-lg xl:text-lg text-gray-300 leading-relaxed font-roboto">
                                 <p>The success of broad targeting relied heavily on creating precise, qualifying ad copy. I wrote ad copy that:</p>
 
                                 <div className="space-y-4">
@@ -277,7 +277,7 @@ const Case5 = () => {
                                 <h3 className="text-2xl md:text-3xl font-semibold text-white">Refining the Funnel</h3>
                             </div>
 
-                            <div className="space-y-4 text-base md:text-lg xl:text-[1.1vw] text-gray-300 leading-relaxed font-roboto">
+                            <div className="space-y-4 text-base md:text-lg xl:text-lg text-gray-300 leading-relaxed font-roboto">
                                 <div className="flex items-start gap-4">
                                     <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
                                     <span>The ad directed prospects to a landing page with a short application form.</span>
@@ -304,24 +304,24 @@ const Case5 = () => {
                             <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-black" />
                             </div>
-                            <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Result</h2>
+                            <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Result</h2>
                         </div>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-6 mb-12">
                         <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
                             <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">$8-10</div>
-                            <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">Average CPL</div>
+                            <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">Average CPL</div>
                             <div className="text-sm md:text-base text-gray-400">Reduced from $20+</div>
                         </div>
                         <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
                             <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">60%</div>
-                            <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">CPL Reduction</div>
+                            <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">CPL Reduction</div>
                             <div className="text-sm md:text-base text-gray-400">Significant savings</div>
                         </div>
                         <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
                             <Crown className="w-16 h-16 text-white mx-auto mb-4" />
-                            <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">Premium Leads</div>
+                            <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">Premium Leads</div>
                             <div className="text-sm md:text-base text-gray-400">CEOs & Executives</div>
                         </div>
                     </div>
@@ -345,7 +345,7 @@ const Case5 = () => {
                     <div className="p-8 bg-white/5 border border-white/10">
                         <div className="flex items-start gap-4">
                             <Network className="w-7 h-7 text-white flex-shrink-0 mt-1" />
-                            <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">Strategic Success: Broad targeting + qualifying ad copy delivered both cost efficiency and premium lead quality</span>
+                            <span className="text-lg md:text-xl xl:text-lg text-white font-medium leading-relaxed">Strategic Success: Broad targeting + qualifying ad copy delivered both cost efficiency and premium lead quality</span>
                         </div>
                     </div>
                 </div>

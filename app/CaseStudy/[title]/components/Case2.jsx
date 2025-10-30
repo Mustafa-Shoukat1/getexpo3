@@ -17,10 +17,10 @@ const Case2 = () => {
                 Case Study
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl xl:text-[6rem] font-bold text-white leading-none tracking-tight">
+            <h1 className="text-5xl md:text-7xl xl:text-6xl font-bold text-white leading-none tracking-tight">
               MedSpa Business
             </h1>
-            <p className="text-xl md:text-2xl xl:text-[1.6vw] text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
+            <p className="text-xl md:text-2xl xl:text-2xl text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
               How we transformed evergreen webinar ads to achieve industry-leading CPL for a medspa training program
             </p>
           </div>
@@ -35,11 +35,11 @@ const Case2 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Target className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Backstory + Situation</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Backstory + Situation</h2>
             </div>
           </div>
           
-          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               I started running ads for this client last year. Her course is about helping Nurses and other women in healthcare roles open their medspa so they can experience freedom, flexibility and financial stability.
             </p>
@@ -86,7 +86,7 @@ const Case2 = () => {
           <div className="mt-10 md:mt-12 p-6 md:p-8 bg-[#0a0a0a] border border-white/10">
             <div className="flex items-start gap-4">
               <Calendar className="w-6 h-6 md:w-7 md:h-7 text-white mt-1 flex-shrink-0" />
-              <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">May 2024: Client switched to evergreen webinars - CPL jumped to $20-25</span>
+              <span className="text-lg md:text-xl xl:text-lg text-white font-medium leading-relaxed">May 2024: Client switched to evergreen webinars - CPL jumped to $20-25</span>
             </div>
           </div>
         </div>
@@ -100,11 +100,11 @@ const Case2 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1a1a1a] border border-white/20 rounded-full flex items-center justify-center">
                 <AlertTriangle className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Challenge</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Challenge</h2>
             </div>
           </div>
           
-          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               Revising the control ad didn't work. Because now the people didn't have the urgency to get them to show up and watch the entire webinar.
             </p>
@@ -148,9 +148,9 @@ const Case2 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Target className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Task</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Task</h2>
             </div>
-            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto">
+            <p className="text-base md:text-xl xl:text-lg text-gray-400 leading-relaxed font-roboto">
               With no support from the agency, I knew I needed to do the heavy lifting on the ads front. I need to figure out a way to …
             </p>
           </div>
@@ -166,7 +166,7 @@ const Case2 = () => {
                   <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-base md:text-lg font-bold text-black">
                     {index + 1}
                   </div>
-                  <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">{task}</span>
+                  <span className="text-base md:text-lg xl:text-lg text-gray-200 leading-relaxed font-roboto">{task}</span>
                 </div>
               </div>
             ))}
@@ -182,11 +182,11 @@ const Case2 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Lightbulb className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Action</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Action</h2>
             </div>
           </div>
           
-          <div className="space-y-8 md:space-y-12 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-8 md:space-y-12 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               I remembered a concept, in which the total addressable market is made of people who will only buy after they read ads with certain angles.
             </p>
@@ -258,29 +258,29 @@ const Case2 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Result</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Result</h2>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">$1.7</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">Average CPL</div>
+              <div className="text-5xl md:text-6xl xl:text-4xl font-bold text-white mb-4">$1.7</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">Average CPL</div>
               <div className="text-sm md:text-base text-gray-400">Sometimes &lt; $1</div>
             </div>
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">5X</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">Evergreen ROAS</div>
+              <div className="text-5xl md:text-6xl xl:text-4xl font-bold text-white mb-4">5X</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">Evergreen ROAS</div>
               <div className="text-sm md:text-base text-gray-400">Consistent delivery</div>
             </div>
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">$30K</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">Monthly Budget</div>
+              <div className="text-5xl md:text-6xl xl:text-4xl font-bold text-white mb-4">$30K</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">Monthly Budget</div>
               <div className="text-sm md:text-base text-gray-400">Scaled up</div>
             </div>
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">$100-120K</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">Monthly Revenue</div>
+              <div className="text-5xl md:text-6xl xl:text-4xl font-bold text-white mb-4">$100-120K</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">Monthly Revenue</div>
               <div className="text-sm md:text-base text-gray-400">Evergreen sales</div>
             </div>
           </div>
@@ -308,7 +308,7 @@ const Case2 = () => {
           <div className="p-8 bg-white/5 border border-white/10">
             <div className="flex items-start gap-4">
               <CheckCircle className="w-7 h-7 text-white flex-shrink-0 mt-1" />
-              <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">Industry Leadership: Lowest CPL in entire competitor base - now used as competitive USP</span>
+              <span className="text-lg md:text-xl xl:text-lg text-white font-medium leading-relaxed">Industry Leadership: Lowest CPL in entire competitor base - now used as competitive USP</span>
             </div>
           </div>
         </div>

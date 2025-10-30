@@ -17,10 +17,10 @@ const Case4 = () => {
                 Case Study
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl xl:text-[6rem] font-bold text-white leading-none tracking-tight">
+            <h1 className="text-5xl md:text-7xl xl:text-6xl font-bold text-white leading-none tracking-tight">
               Supplements
             </h1>
-            <p className="text-xl md:text-2xl xl:text-[1.6vw] text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
+            <p className="text-xl md:text-2xl xl:text-2xl text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
               How systematic testing and multi-angle strategy scaled supplement ads from $0 to $2300+/day in 30 days
             </p>
           </div>
@@ -35,11 +35,11 @@ const Case4 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Award className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Backstory + Situation</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Backstory + Situation</h2>
             </div>
           </div>
           
-          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               The CEO of this offer owner is a renowned media buyer who helped scale an entire company to over $900M.
             </p>
@@ -71,7 +71,7 @@ const Case4 = () => {
             </div>
           </div>
 
-          <div className="mt-10 md:mt-12 space-y-6 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="mt-10 md:mt-12 space-y-6 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p className="font-medium text-white">
               I was the perfect candidate for him.
             </p>
@@ -84,7 +84,7 @@ const Case4 = () => {
           <div className="mt-10 md:mt-12 p-8 bg-white/5 border border-white/10">
             <div className="flex items-start gap-4">
               <Award className="w-7 h-7 text-white flex-shrink-0 mt-1" />
-              <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">High-Profile Client: CEO who scaled company to $900M+ looking for elite all-rounder</span>
+              <span className="text-lg md:text-xl xl:text-lg text-white font-medium leading-relaxed">High-Profile Client: CEO who scaled company to $900M+ looking for elite all-rounder</span>
             </div>
           </div>
         </div>
@@ -98,11 +98,11 @@ const Case4 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1a1a1a] border border-white/20 rounded-full flex items-center justify-center">
                 <Settings className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Challenge</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Challenge</h2>
             </div>
           </div>
           
-          <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto mb-12">
+          <p className="text-base md:text-xl xl:text-lg text-gray-400 leading-relaxed font-roboto mb-12">
             I had to come up with 2 systems:
           </p>
 
@@ -142,16 +142,16 @@ const Case4 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Cog className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Action</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Action</h2>
             </div>
           </div>
           
           <div className="space-y-10 md:space-y-12">
-            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+            <p className="text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
               I started writing ads for products one by one.
             </p>
             
-            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+            <p className="text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
               First product was a Sea Moss supplement. I wrote ads around these angles:
             </p>
 
@@ -187,7 +187,7 @@ const Case4 = () => {
             {/* Testing Strategy */}
             <div className="p-8 md:p-10 bg-white/5 border border-white/10">
               <h3 className="text-2xl md:text-3xl font-semibold text-white mb-8">Systematic Testing Approach</h3>
-              <div className="space-y-6 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+              <div className="space-y-6 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
                 <p>
                   I gave each ad about $15-20/day in each adset, and tested all these ads in ad sets with 1 audience each. A few audiences I used were:
                 </p>
@@ -219,7 +219,7 @@ const Case4 = () => {
             <div className="p-8 bg-white/5 border border-white/10">
               <div className="flex items-start gap-4">
                 <Layers className="w-7 h-7 text-white flex-shrink-0 mt-1" />
-                <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">I followed the same procedure for all products.</span>
+                <span className="text-lg md:text-xl xl:text-lg text-white font-medium leading-relaxed">I followed the same procedure for all products.</span>
               </div>
             </div>
           </div>
@@ -234,19 +234,19 @@ const Case4 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Result</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Result</h2>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
               <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">$70-85</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">CPS (USD)</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">CPS (USD)</div>
               <div className="text-sm md:text-base text-gray-400">Cost Per Sale</div>
             </div>
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
               <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">$2300+</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">Daily Spend</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">Daily Spend</div>
               <div className="text-sm md:text-base text-gray-400">Reached in 30 days</div>
             </div>
           </div>
@@ -266,7 +266,7 @@ const Case4 = () => {
           <div className="p-8 bg-white/5 border border-white/10 mb-12">
             <div className="flex items-start gap-4">
               <Zap className="w-7 h-7 text-white flex-shrink-0 mt-1" />
-              <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">Exceptional Performance: Exceeded $500/day target by 460% - reached $2300+/day in just 30 days</span>
+              <span className="text-lg md:text-xl xl:text-lg text-white font-medium leading-relaxed">Exceptional Performance: Exceeded $500/day target by 460% - reached $2300+/day in just 30 days</span>
             </div>
           </div>
 

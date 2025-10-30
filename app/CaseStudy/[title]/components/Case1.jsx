@@ -10,17 +10,17 @@ const Case1 = () => {
       
       {/* Header */}
       <div className="relative overflow-hidden border-b border-white/5">
-        <div className="relative container mx-auto px-6 py-20 md:py-32">
+        <div className="relative container mx-auto px-6 py-20 md:py-32 max-w-7xl">
           <div className="max-w-5xl mx-auto space-y-8">
             <div className="inline-block">
               <span className="text-xs md:text-sm font-medium text-gray-500 uppercase tracking-[0.2em]">
                 Case Study
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl xl:text-[6rem] font-bold text-white leading-none tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl font-bold text-white leading-none tracking-tight">
               Medical Education
             </h1>
-            <p className="text-xl md:text-2xl xl:text-[1.6vw] text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
               How we turned a failing Facebook ads campaign into a success story for an EKG training program
             </p>
           </div>
@@ -28,18 +28,18 @@ const Case1 = () => {
       </div>
 
       {/* Backstory + Situation */}
-      <section className="container mx-auto px-6 py-16 md:py-24">
+      <section className="container mx-auto px-6 py-16 md:py-24 max-w-7xl">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12 md:mb-16">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
-                <Target className="w-5 h-5 md:w-6 md:h-6 text-black" />
+              <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center">
+                <Target className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Backstory + Situation</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-bold text-white tracking-tight">Backstory + Situation</h2>
             </div>
           </div>
           
-          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-6 md:space-y-8 text-base md:text-lg lg:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               I managed Facebook ads for a client specializing in EKG interpretation for nurse practitioners—a skill where accuracy could mean the difference between life and death. She had a course in which she taught other Nurse Practitioners who wanted to learn EKGs.
             </p>
@@ -51,26 +51,26 @@ const Case1 = () => {
           {/* Success Metric */}
           <div className="mt-10 md:mt-12 p-6 md:p-8 bg-white/5 border border-white/10 backdrop-blur-sm">
             <div className="flex items-start gap-4">
-              <TrendingDown className="w-6 h-6 md:w-7 md:h-7 text-white mt-1 flex-shrink-0" />
-              <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">Initial Success: CPL reduced from $8 to $5 (62% reduction)</span>
+              <TrendingDown className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-white mt-1 flex-shrink-0" />
+              <span className="text-base md:text-lg lg:text-xl xl:text-lg text-white font-medium leading-relaxed">Initial Success: CPL reduced from $8 to $5 (62% reduction)</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Challenge */}
-      <section className="container mx-auto px-6 py-16 md:py-24 bg-gradient-to-b from-black via-[#0a0a0a] to-black">
+      <section className="container mx-auto px-6 py-16 md:py-24 bg-gradient-to-b from-black via-[#0a0a0a] to-black max-w-7xl">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12 md:mb-16">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1a1a1a] border border-white/20 rounded-full flex items-center justify-center">
-                <AlertTriangle className="w-5 h-5 md:w-6 md:h-6 text-white" />
+              <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-[#1a1a1a] border border-white/20 rounded-full flex items-center justify-center">
+                <AlertTriangle className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-white" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Challenge</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-bold text-white tracking-tight">Challenge</h2>
             </div>
           </div>
           
-          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-6 md:space-y-8 text-base md:text-lg lg:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               Six months in, my world turned upside down. Our once-stellar CPL skyrocketed past $5, and ad fatigue hit us like a huge tidal wave.
             </p>
@@ -95,14 +95,14 @@ const Case1 = () => {
           <div className="mt-10 md:mt-12 grid md:grid-cols-2 gap-4 md:gap-6">
             <div className="p-6 md:p-8 bg-[#0a0a0a] border border-white/10">
               <div className="flex items-start gap-4">
-                <TrendingUp className="w-6 h-6 md:w-7 md:h-7 text-white mt-1 flex-shrink-0" />
-                <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium">CPL skyrocketed past $5</span>
+                <TrendingUp className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-white mt-1 flex-shrink-0" />
+                <span className="text-base md:text-lg lg:text-xl xl:text-lg text-white font-medium">CPL skyrocketed past $5</span>
               </div>
             </div>
             <div className="p-6 md:p-8 bg-[#0a0a0a] border border-white/10">
               <div className="flex items-start gap-4">
-                <AlertTriangle className="w-6 h-6 md:w-7 md:h-7 text-white mt-1 flex-shrink-0" />
-                <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium">Budget slashed by 70%</span>
+                <AlertTriangle className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-white mt-1 flex-shrink-0" />
+                <span className="text-base md:text-lg lg:text-xl xl:text-lg text-white font-medium">Budget slashed by 70%</span>
               </div>
             </div>
           </div>
@@ -110,16 +110,16 @@ const Case1 = () => {
       </section>
 
       {/* Task */}
-      <section className="container mx-auto px-6 py-16 md:py-24">
+      <section className="container mx-auto px-6 py-16 md:py-24 max-w-7xl">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12 md:mb-16">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
-                <Target className="w-5 h-5 md:w-6 md:h-6 text-black" />
+              <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center">
+                <Target className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Task</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-bold text-white tracking-tight">Task</h2>
             </div>
-            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto">
+            <p className="text-base md:text-lg lg:text-xl xl:text-lg text-gray-400 leading-relaxed font-roboto">
               As the head media buyer, I faced a mountain that seemed almost impossible to climb:
             </p>
           </div>
@@ -136,7 +136,7 @@ const Case1 = () => {
                   <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-base md:text-lg font-bold text-black">
                     {index + 1}
                   </div>
-                  <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">{task}</span>
+                  <span className="text-base md:text-lg lg:text-xl xl:text-lg text-gray-200 leading-relaxed font-roboto">{task}</span>
                 </div>
               </div>
             ))}
@@ -145,30 +145,30 @@ const Case1 = () => {
       </section>
 
       {/* Action */}
-      <section className="container mx-auto px-6 py-16 md:py-24 bg-gradient-to-b from-black via-[#0a0a0a] to-black">
+      <section className="container mx-auto px-6 py-16 md:py-24 bg-gradient-to-b from-black via-[#0a0a0a] to-black max-w-7xl">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12 md:mb-16">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Lightbulb className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Action</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Action</h2>
             </div>
           </div>
 
           <div className="space-y-12 md:space-y-16">
             {/* Initial Frustration */}
             <div className="border-l-2 border-white/20 pl-8 md:pl-12">
-              <h3 className="text-2xl md:text-3xl xl:text-[2vw] font-semibold text-white mb-6">Initial Frustration</h3>
-              <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+              <h3 className="text-2xl md:text-3xl xl:text-2xl font-semibold text-white mb-6">Initial Frustration</h3>
+              <p className="text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
                 I revised the ads frantically. But none of those new ads worked. My heart was sinking with every day passing by. as each attempt fell flat. The feeling of helplessness was overwhelming.
               </p>
             </div>
 
             {/* Market Insight Epiphany */}
             <div className="border-l-2 border-white/20 pl-8 md:pl-12">
-              <h3 className="text-2xl md:text-3xl xl:text-[2vw] font-semibold text-white mb-6">Market Insight Epiphany</h3>
-              <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+              <h3 className="text-2xl md:text-3xl xl:text-2xl font-semibold text-white mb-6">Market Insight Epiphany</h3>
+              <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
                 <p>
                   Obviously I wrote more new ads. But nothing worked. The copy was great, the creatives looked amazing that could stop the scroll, and based on the previous data with this client and this industry, I was writing the perfect ads and designing the perfect creatives.
                 </p>
@@ -195,8 +195,8 @@ const Case1 = () => {
 
             {/* Pivot Strategy */}
             <div className="border-l-2 border-white/20 pl-8 md:pl-12">
-              <h3 className="text-2xl md:text-3xl xl:text-[2vw] font-semibold text-white mb-6">Pivot to Problem-Aware Audience</h3>
-              <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+              <h3 className="text-2xl md:text-3xl xl:text-2xl font-semibold text-white mb-6">Pivot to Problem-Aware Audience</h3>
+              <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
                 <p>
                   With renewed hope, I crafted new ads targeting problem-aware prospects.
                 </p>
@@ -219,40 +219,40 @@ const Case1 = () => {
       </section>
 
       {/* Result */}
-      <section className="container mx-auto px-6 py-16 md:py-24 border-t border-white/5">
+      <section className="container mx-auto px-6 py-16 md:py-24 border-t border-white/5 max-w-7xl">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12 md:mb-16">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Result</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Result</h2>
             </div>
 
-            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto font-medium">
+            <p className="text-base md:text-xl xl:text-lg text-gray-400 leading-relaxed font-roboto font-medium">
               The turnaround felt nothing short of miraculous:
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">75%</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">CPL Reduction</div>
+              <div className="text-5xl md:text-6xl xl:text-4xl font-bold text-white mb-4">75%</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">CPL Reduction</div>
               <div className="text-sm md:text-base text-gray-400">From $8 to $2</div>
             </div>
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">4-6X</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">ROAS</div>
+              <div className="text-5xl md:text-6xl xl:text-4xl font-bold text-white mb-4">4-6X</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">ROAS</div>
               <div className="text-sm md:text-base text-gray-400">Consistent delivery</div>
             </div>
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-5xl md:text-6xl xl:text-[4vw] font-bold text-white mb-4">✓</div>
-              <div className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium mb-2">Trust Renewed</div>
+              <div className="text-5xl md:text-6xl xl:text-4xl font-bold text-white mb-4">✓</div>
+              <div className="text-lg md:text-xl xl:text-lg text-white font-medium mb-2">Trust Renewed</div>
               <div className="text-sm md:text-base text-gray-400">Client satisfaction</div>
             </div>
           </div>
 
-          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               We achieved a CPL reduction from $8 to $2—a 75% cut that seemed impossible just weeks before.
             </p>

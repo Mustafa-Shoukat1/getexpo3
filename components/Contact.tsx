@@ -78,21 +78,21 @@ export default function EnhancedContactForm() {
   ]
 
   return (
-    <section id="contact" className="py-20 !overflow-hidden px-0 lg:px-8 ">
-      <div className="container mx-auto">
+    <section id="contact" className="py-20 !overflow-hidden px-4 lg:px-8">
+      <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-8xl font-poppins  text-white mb-6">
-            Ready to Transform Your{" "} <br />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-poppins text-white mb-6 px-2 max-w-5xl mx-auto leading-tight">
+            Ready to Transform Your{" "}
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               Ad Performance?
             </span>
           </h2>
-          <p className="text-xl font-poppins text-gray-100 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-base lg:text-lg xl:text-lg font-poppins text-gray-100 max-w-3xl mx-auto px-4">
             Book a free 15-minute consultation to discuss your specific needs and discover how we can help you achieve
             your advertising goals.
           </p>

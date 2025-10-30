@@ -17,10 +17,10 @@ const Case3 = () => {
                 Case Study
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl xl:text-[6rem] font-bold text-white leading-none tracking-tight">
+            <h1 className="text-5xl md:text-7xl xl:text-6xl font-bold text-white leading-none tracking-tight">
               IV Hydration
             </h1>
-            <p className="text-xl md:text-2xl xl:text-[1.6vw] text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
+            <p className="text-xl md:text-2xl xl:text-2xl text-gray-400 max-w-3xl font-roboto font-normal leading-relaxed">
               How repositioning transformed an IV hydration training program from 1-2X ROAS to 5.3X ROAS
             </p>
           </div>
@@ -35,11 +35,11 @@ const Case3 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Target className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Backstory + Situation</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Backstory + Situation</h2>
             </div>
           </div>
 
-          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               I started running ads for this client last year. She helps healthcare professionals in various verticals transition into IV Hydration Businesses.
             </p>
@@ -88,11 +88,11 @@ const Case3 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1a1a1a] border border-white/20 rounded-full flex items-center justify-center">
                 <AlertTriangle className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Challenge</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Challenge</h2>
             </div>
           </div>
 
-          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+          <div className="space-y-6 md:space-y-8 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
             <p>
               After doing a lot of research, I realized that the offer wasn't standing out. Which is why even with the proven ads, the CTR wasn't hitting the 2% mark.
             </p>
@@ -130,10 +130,10 @@ const Case3 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Lightbulb className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Task</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Task</h2>
             </div>
 
-            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto mb-12">
+            <p className="text-base md:text-xl xl:text-lg text-gray-400 leading-relaxed font-roboto mb-12">
               I had a few different ideas to position the offer.
             </p>
           </div>
@@ -144,7 +144,7 @@ const Case3 = () => {
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-lg font-bold text-black">
                   1
                 </div>
-                <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">
+                <span className="text-base md:text-lg xl:text-lg text-gray-200 leading-relaxed font-roboto">
                   For example, we could target a different set of audience and besides just Nurses, we could target a more niched audience.
                 </span>
               </div>
@@ -154,14 +154,14 @@ const Case3 = () => {
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-lg font-bold text-black">
                   2
                 </div>
-                <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">
+                <span className="text-base md:text-lg xl:text-lg text-gray-200 leading-relaxed font-roboto">
                   Or we could position ourselves in the business category. Meaning, instead of teaching how to transition from a full time nursing role, we could teach how to open a business hydration business.
                 </span>
               </div>
             </div>
           </div>
 
-          <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-400 leading-relaxed font-roboto mb-8">This lead to …</p>
+          <p className="text-base md:text-xl xl:text-lg text-gray-400 leading-relaxed font-roboto mb-8">This lead to …</p>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -172,7 +172,7 @@ const Case3 = () => {
               <div key={index} className="p-8 bg-white/5 border border-white/10">
                 <div className="flex items-start gap-4">
                   <RefreshCw className="w-6 h-6 text-white flex-shrink-0 mt-1" />
-                  <span className="text-base md:text-lg xl:text-[1.1vw] text-gray-200 leading-relaxed font-roboto">{task}</span>
+                  <span className="text-base md:text-lg xl:text-lg text-gray-200 leading-relaxed font-roboto">{task}</span>
                 </div>
               </div>
             ))}
@@ -188,23 +188,23 @@ const Case3 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <Zap className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Action</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Action</h2>
             </div>
           </div>
 
           <div className="space-y-8 md:space-y-12">
-            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+            <p className="text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
               I saw that almost no one was using this positioning of becoming an IVH business owner in ads.
             </p>
 
-            <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+            <p className="text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
               And that's what I changed in my ads.
             </p>
 
             {/* Strategy Breakdown */}
             <div className="p-10 bg-white/5 border border-white/10">
               <h3 className="text-2xl md:text-3xl font-semibold text-white mb-8">Ad Strategy Implementation</h3>
-              <div className="space-y-6 text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto">
+              <div className="space-y-6 text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto">
                 <p>I wrote problem aware ads, solution ware ads. Plus I wrote Product aware ads for her warm audience on IG and Tiktok.</p>
 
                 <div className="grid md:grid-cols-2 gap-6 mt-8">
@@ -226,7 +226,7 @@ const Case3 = () => {
 
             <div className="p-10 bg-white/5 border border-white/10">
               <h3 className="text-2xl md:text-3xl font-semibold text-white mb-8">Perfect Awareness Escalation</h3>
-              <p className="text-base md:text-xl xl:text-[1.2vw] text-gray-300 leading-relaxed font-roboto mb-8">
+              <p className="text-base md:text-xl xl:text-lg text-gray-300 leading-relaxed font-roboto mb-8">
                 The combination of ads and the landing page was escalating the awareness of our reader perfectly.
               </p>
 
@@ -258,7 +258,7 @@ const Case3 = () => {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-black" />
               </div>
-              <h2 className="text-3xl md:text-5xl xl:text-[3.5vw] font-bold text-white tracking-tight">Result</h2>
+              <h2 className="text-3xl md:text-5xl xl:text-4xl font-bold text-white tracking-tight">Result</h2>
             </div>
 
             <p className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
@@ -268,17 +268,17 @@ const Case3 = () => {
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-4xl md:text-5xl xl:text-[3.5vw] font-bold text-white mb-4">$1.85 - 3.99</div>
+              <div className="text-4xl md:text-5xl xl:text-4xl font-bold text-white mb-4">$1.85 - 3.99</div>
               <div className="text-lg md:text-xl text-white font-medium mb-2">CPL Range</div>
               <div className="text-sm text-gray-400">Excellent performance</div>
             </div>
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-4xl md:text-5xl xl:text-[3.5vw] font-bold text-white mb-4">5.3X</div>
+              <div className="text-4xl md:text-5xl xl:text-4xl font-bold text-white mb-4">5.3X</div>
               <div className="text-lg md:text-xl text-white font-medium mb-2">Webinar ROAS</div>
               <div className="text-sm text-gray-400">Exceeded target</div>
             </div>
             <div className="p-8 md:p-10 bg-white/5 border border-white/10 text-center">
-              <div className="text-4xl md:text-5xl xl:text-[3.5vw] font-bold text-white mb-4">$30K</div>
+              <div className="text-4xl md:text-5xl xl:text-4xl font-bold text-white mb-4">$30K</div>
               <div className="text-lg md:text-xl text-white font-medium mb-2">Monthly Budget</div>
               <div className="text-sm text-gray-400">Scaled investment</div>
             </div>
@@ -303,7 +303,7 @@ const Case3 = () => {
           <div className="mt-12 p-8 bg-white/5 border border-white/10">
             <div className="flex items-start gap-4">
               <Zap className="w-7 h-7 text-white flex-shrink-0 mt-1" />
-              <span className="text-lg md:text-xl xl:text-[1.3vw] text-white font-medium leading-relaxed">Transformation Success: From 1-2X ROAS to 5.3X ROAS through strategic repositioning</span>
+              <span className="text-lg md:text-xl xl:text-lg text-white font-medium leading-relaxed">Transformation Success: From 1-2X ROAS to 5.3X ROAS through strategic repositioning</span>
             </div>
           </div>
         </div>
